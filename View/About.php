@@ -23,7 +23,7 @@
                 <div class="info">
                     <p>The restaurant was founded in bla bla bla bla ...</p>
                     <p style="margin-bottom: 50px;">The chef: Mr.ABC</p>
-                    <img src="Images/Restaurant.jpg" alt="Image">
+                    <img src="Images/restaurant.jpg" alt="Image">
                     <table>
                         <tr>
                             <th colspan="2"><h2>Opening Hours</h2></th>
