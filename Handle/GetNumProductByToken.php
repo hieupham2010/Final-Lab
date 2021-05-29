@@ -8,8 +8,10 @@
         $stmt->execute();
         $result = $stmt->get_result();
         $Item = $result->num_rows;
+        echo $Item;
     }else {
         $Item = 0;
+        echo $Item;
     }
     
 ?>

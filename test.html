@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Home</title>
+</head>
+
+<body>
+    <form action="" method="post">
+        <input type="file" id="fileUpload" name="fileUpload">
+        <select name="Type" id="Type">
+            <option value="JRS-353">JRS-353</option>
+            <option value="Jackson">Jackson</option>
+            <option value="Gson">Gson</option>
+            <option value="JavaEE8Enhancement">Java EE 8 Enhancement</option>
+        </select>
+        <input type="submit" value="Submit">
+    </form>
+    <a href="http://localhost:8080/Exercise/soa/">Click here</a>
+
+    <script>
+        // function checkType() {
+        //     var formData = new FormData();
+        //     var value = document.getElementById("Type").value;
+        //     attachment_data = $("#fileUpload")[0].files[0];
+        //     formData.append("attachment_data", attachment_data);
+        //     console.log(formData)
+        //     if (value == "JRS-353") {
+        //         $.ajax({
+        //             type: "Post",
+        //             url: "/123",
+        //             data: formData,
+        //             dataType: "json",
+        //             processData: false,
+        //             contentType: "application/json"
+        //         })
+        //     } else if (value == "Jackson") {
+        //         $.ajax({
+        //             type: "Post",
+        //             url: "/456",
+        //             data: formData,
+        //             dataType: "json",
+        //             processData: false,
+        //             contentType: "application/json"
+        //         })
+        //     } else if (value == "Gson") {
+        //         $.ajax({
+        //             type: "Post",
+        //             url: "/789",
+        //             data: formData,
+        //             dataType: "json",
+        //             processData: false,
+        //             contentType: "application/json"
+        //         })
+        //     } else {
+        //         $.ajax({
+        //             type: "Post",
+        //             url: "/1011",
+        //             data: formData,
+        //             dataType: "json",
+        //             processData: false,
+        //             contentType: "application/json"
+        //         })
+        //     }
+        // }
+    </script>
+</body>
+
+</html>

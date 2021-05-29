@@ -7,10 +7,11 @@
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Amatic+SC" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="Style/style.css">
+    <script src="Javascript/javascript.js"></script>
     <title>Menu</title>
 </head>
 
-<body>
+<body onload="loadNumProduct()">
     <div class="container">
         <div class="content">
             <div class="top_nav">
@@ -18,9 +19,8 @@
                 <a href="Menu">Menu</a>
                 <a href="Contact">Contact</a>
                 <a href="About">About</a>
-                <?php include '../Handle/GetNumProductByToken.php' ?>
                 <form action="Cart" method="GET">
-                    <button id="button-cart"><i class="fa fa-shopping-cart"> (<?php echo $Item ?>)</i></button>
+                    <button id="button-cart"><i class="fa fa-shopping-cart" id="numProduct">(0)</i></button>
                 </form>
                 <div class="search-container">
                     <form action="Menu" method="GET">

@@ -23,6 +23,5 @@
             $stmt->execute();
         }
         $connection->close();
-        header("Location: ../View/Menu");
     }
 ?>

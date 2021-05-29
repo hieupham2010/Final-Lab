@@ -31,9 +31,9 @@ while ($row = $result->fetch_assoc()) {
             <h2 style="margin-left: 10px;"><b><?php echo $row["ProductName"] ?></b></h2>
             <p style="margin-left: 10px;"><?php echo $row["Description"] ?></p>
         </div>
-        <form action="../Handle/AddProductToCartProcess" method="POST">
-            <input type="hidden" name="ProductID" value="<?php echo $row["ProductID"] ?>">
-            <button type="submit" id="AddToCart">Add to cart</button>
+        <form>
+            <!-- <input type="hidden" name="ProductID" value="<?php //echo $row["ProductID"] ?>"> -->
+            <button type="button" onclick="addToCart(<?php echo $row['ProductID'] ?>)" id="AddToCart">Add to cart</button>
         </form>
     </div>
 <?php } ?>
